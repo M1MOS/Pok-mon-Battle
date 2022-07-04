@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  top: 50%;
+}
+body section {
+  position: relative;
+}
+body section .rayquaza {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 800px;
+  margin-bottom: 150px;
+  width: 100%;
+}
+body section .rayquaza .progress #file {
+  background-color: green;
+}
+body section .rayquaza .pokeray {
+  width: 23%;
+}
+body section .pikachu {
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 400px;
+  margin-bottom: 100px;
+}
+body section .pikachu .progress #file {
+  background-color: green;
+}
+body section .pikachu .pokeimg {
+  width: 30%;
+}
+body section .pikachu .mesattaque {
+  width: 100%;
+  margin-left: 70%;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+body section .pikachu .mesattaque .atq-1 {
+  display: flex;
+  gap: 10px;
+}
+body section .pikachu .mesattaque .atq-1 button {
+  background-color: white;
+  color: red;
+  padding: 10px 40px;
+  border-color: red;
+  border-radius: 15px;
+  transition: 0.6s;
+}
+body section .pikachu .mesattaque .atq-1 button:hover {
+  border-color: blue;
+  color: blue;
+}
+body section .pikachu .mesattaque .atq-2 {
+  display: flex;
+  gap: 10px;
+}
+body section .pikachu .mesattaque .atq-2 button {
+  background-color: white;
+  color: red;
+  padding: 10px 40px;
+  border-color: red;
+  border-radius: 15px;
+  transition: 0.6s;
+}
+body section .pikachu .mesattaque .atq-2 button:hover {
+  border-color: blue;
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
