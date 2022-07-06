@@ -1,56 +1,35 @@
 // Constructor pokémon
+let raylife = document.getElementById('hp');
+let pikalife = document.getElementById('hp1');
 export class Pokemon {
-    constructor(nom,life,type,atq){
+    constructor(nom,fullhp, atq) {
         this.nom = nom;
-        this.life
-        this.type = type;
+        this.fullhp = fullhp;
         this.atq = atq;
-        this.attaque = (pokeatq) => {
-            this.atq = this.atq - pokeatq.life
+        this.attaque = (ennemy) => {
+            ennemy.fullhp = ennemy.fullhp - this.atq
         };
-        this.faiblesse = (poke) => {
-            if (electric == eau ) {
-                this.atq = (this.atq * 2) - poke.life;
-            }else if(eau == feu){
-                this.atq = (this.atq * 2) - poke.life;
-            }else if(feuille == eau){
-                this.atq = (this.atq * 2) - poke.life;
-            }else if(feu == feuille){
-                this.atq = (this.atq * 2) - poke.life;
-            }else if(dragon == dragon){
-                this.atq = (this.atq * 2) - poke.life;
-            };
+        this.seeLifeRay = () => {
+            this.fullhp 
         };
     };
 };
 
-export class electric extends Pokemon {
-    constructor(nom,life,type,atq,prop1,prop2,prop3,prop4){
-        super(nom,type,atq);
-    };
+// Button Attaque
+let btn = document.getElementById('m0');
+let btn2 = document.getElementById('m1');
+let btn3 = document.getElementById('m2');
+let btn4 = document.getElementById('m3');
+
+
+function letAtk(letGo) {
+    btn.addEventListener("onclick", function(){
+        for (let i = 0; i < 4; i++) {
+            letGo.fullhp = letGo.fullhp - letGo.atq;
+        };
+    });
 };
-export class eau extends Pokemon {
-    constructor(nom,life,type,atq){
-        super(nom,life,type,atq);
-    };
-};
-export class dragon extends Pokemon {
-    constructor(nom,life,type,atq){
-        super(nom,life,type,atq);
-    };
-};
-export class feu extends Pokemon {
-    constructor(nom,life,type,atq){
-        super(nom,life,type,atq);
-    };
-};
-export class feuille extends Pokemon {
-    constructor(nom,life,type,atq){
-        super(nom,life,type,atq);
-    };
-};
-export class psy extends Pokemon {
-    constructor(nom,life,type,atq){
-        super(nom,life,type,atq);
-    };
-};
+
+function letFight() {
+    
+}

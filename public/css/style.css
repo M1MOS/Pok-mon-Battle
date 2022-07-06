@@ -7,32 +7,35 @@ body {
 body section {
   position: relative;
 }
-body section .rayquaza {
+body section .pk2 {
   position: absolute;
   margin-top: 150px;
   margin-left: 800px;
   margin-bottom: 150px;
   width: 100%;
 }
-body section .rayquaza .progress #file {
+body section .pk2 .progress #file {
   background-color: green;
 }
-body section .rayquaza .pokeray {
+body section .pk2 .pokeray {
   width: 23%;
 }
-body section .pikachu {
+body section .pk1 {
   position: absolute;
   margin-top: 500px;
   margin-left: 400px;
   margin-bottom: 100px;
 }
-body section .pikachu .progress #file {
+body section .pk1 .progress {
+  border-radius: 10%;
+}
+body section .pk1 .progress #file {
   background-color: green;
 }
-body section .pikachu .pokeimg {
+body section .pk1 .pokeimg {
   width: 30%;
 }
-body section .pikachu .mesattaque {
+body section .pk1 .mesattaque {
   width: 100%;
   margin-left: 70%;
   padding: 30px 0;
@@ -40,11 +43,11 @@ body section .pikachu .mesattaque {
   flex-wrap: wrap;
   gap: 10px;
 }
-body section .pikachu .mesattaque .atq-1 {
+body section .pk1 .mesattaque .atq-1 {
   display: flex;
   gap: 10px;
 }
-body section .pikachu .mesattaque .atq-1 button {
+body section .pk1 .mesattaque .atq-1 button {
   background-color: white;
   color: red;
   padding: 10px 40px;
@@ -52,15 +55,15 @@ body section .pikachu .mesattaque .atq-1 button {
   border-radius: 15px;
   transition: 0.6s;
 }
-body section .pikachu .mesattaque .atq-1 button:hover {
+body section .pk1 .mesattaque .atq-1 button:hover {
   border-color: blue;
   color: blue;
 }
-body section .pikachu .mesattaque .atq-2 {
+body section .pk1 .mesattaque .atq-2 {
   display: flex;
   gap: 10px;
 }
-body section .pikachu .mesattaque .atq-2 button {
+body section .pk1 .mesattaque .atq-2 button {
   background-color: white;
   color: red;
   padding: 10px 40px;
@@ -68,7 +71,7 @@ body section .pikachu .mesattaque .atq-2 button {
   border-radius: 15px;
   transition: 0.6s;
 }
-body section .pikachu .mesattaque .atq-2 button:hover {
+body section .pk1 .mesattaque .atq-2 button:hover {
   border-color: blue;
   color: blue;
 }

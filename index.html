@@ -9,35 +9,34 @@
 </head>
 <body>
     <section>
-        <div class="rayquaza">
+        <div class="pk2">
             <div class="progress">
                 <p>Rayquaza</p>
                 <p>Lvl. 80 </p>
-                <progress id="file" value="100" max="100"> rayquaza</progress>
+                <p id="hp"></p>
             </div>
             <img class="pokeray" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/384.gif" alt="">
         </div>
-        <div class="pikachu">
+        <div class="pk1">
             <div class="progress">
                 <p>Pikachu</p>
                 <p>Lvl. 75</p>
-                <p>Pv. 100/100</p>
+                <p id="hp1"></p>
             </div>
             <img class="pokeimg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/25.gif" alt="">
             <div class="mesattaque">
                 <div class="atq-1">
-                    <button>Vive-Attaque</button>
-                    <button>Fatal-Foudre</button>
+                    <button class="btn" id="m0">Vive-Attaque</button>
+                    <button class="btn" id="m1">Fatal-Foudre</button>
                 </div>
                 <div class="atq-2">
-                    <button>Electacle</button>
-                    <button>Tonnerre</button>
+                    <button class="btn" id="m2">Electacle</button>
+                    <button class="btn" id="m3">Tonnerre</button>
                 </div>
-                
             </div>
         </div>
     </section>
     
-<script src="./public/js/main.js"></script>
+<script src="./public/js/main.js" type="module"></script>
 </body>
 </html>
